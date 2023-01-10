@@ -7,9 +7,9 @@
         <h1>Hello Coursera! I'm lovin' it</h1>
         <p id="answer"></p>
         <script>
-            let num = prompt('Numerator: ');
-            let den = prompt('Denominator: ') || 1;
-            document.getElementById('answer').innerHTML = (num/den);
+            let num = +prompt('Numerator: ');
+            let den = +prompt('Denominator: ') || 1;
+            document.getElementById('answer').innerHTML = num + " divided by " + den + " is: " + (num/den);
         </script>
     </body>
 </html>
