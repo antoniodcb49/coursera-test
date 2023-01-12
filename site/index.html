@@ -4,12 +4,22 @@
         <title>Hello Coursera</title>
     </head>
     <body>
-        <h1>Hello Coursera! I'm lovin' it</h1>
+        <h1>Divide Two Numbers</h1>
+        <input type="text" id="numerator">
+        <input type="text" id="denominator">
+        <button onclick="divide()">Divide</button>
         <p id="answer"></p>
         <script>
-            let num = +prompt('Numerator: ');
+            /* let num = +prompt('Numerator: ');
             let den = +prompt('Denominator: ') || 1;
-            document.getElementById('answer').innerHTML = num + " divided by " + den + " is: " + (num/den);
+            document.getElementById('answer').innerHTML = num + " divided by " + den + " is: " + (num/den); */
+            function divide () {
+                let num = +document.getElementById("numerator").value;
+                let den = +document.getElementById("denominator").value || 1;
+
+                let roundedAnswer = Math.round((num * 100)/den)/100;
+                document.getElementById("answer").innerHTML = "The answer is: " + roundedAnswer;
+            }
         </script>
     </body>
 </html>
