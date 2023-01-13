@@ -5,10 +5,16 @@
     </head>
     <body>
         <h1>Divide Two Numbers</h1>
-        <input type="text" id="numerator">
-        <input type="text" id="denominator">
+        <div>
+            <label for="numerator">Numerator: </label>
+            <input type="text" id="numerator">
+        </div>
+        <div>
+            <label for="denominator">Denominator: </label>
+            <input type="text" id="denominator">
+        </div>
         <button onclick="divide()">Divide</button>
-        <p id="answer"></p>
+        <p id="answer">The answer is: --</p>
         <script>
             /* let num = +prompt('Numerator: ');
             let den = +prompt('Denominator: ') || 1;
